@@ -22,7 +22,7 @@ const Card = ({ src, link, name, por }) => {
                             />
                         </div>
                         <div className="w-full h-auto text-center bg-[#e5dae5] bottom-0">
-                            <h3 className="leading-tight-[2rem] text-[2rem]">
+                            <h3 className="leading-tight-[2rem] text-[2.2rem] font-[600]">
                                 {name}
                             </h3>
                             <p className="opacity-65">{por}</p>
