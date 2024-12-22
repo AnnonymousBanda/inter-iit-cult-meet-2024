@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Footer.jsx", "app/contact/page.jsx", "app/layout.jsx", "app/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

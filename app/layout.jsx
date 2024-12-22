@@ -1,6 +1,6 @@
 import React from 'react';
 import './globals.css';
-import { Footer, Navbar } from './../components';
+import { Footer } from '../components';
 
 export const metadata = {
     title: 'Inter IIT Cultural Meet 2024',
@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <Navbar />
-                <main className="max-container">{children}</main>
+                {/* <Navbar /> */}
+                {children}
                 <Footer />
             </body>
         </html>
