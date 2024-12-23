@@ -31,14 +31,25 @@ const Navbar = () => {
 
     useEffect(() => {
         gsap.to('.navbar', {
-            top: '-15rem',
             scrollTrigger: {
                 trigger: '.footer',
                 start: 'top center',
-                end: 'bottom top',
-                scrub: true,
+                toggleActions: 'play none reverse none',
+                onEnter: () => {
+                    gsap.to('.navbar', {
+                        duration: 1,
+                        top: '-15rem',
+                        ease: 'back.out',
+                    });
+                },
+                onLeaveBack: () => {
+                    gsap.to('.navbar', {
+                        duration: 1,
+                        top: '0px',
+                        ease: 'back.in',
+                    });
+                },
             },
-            ease: 'power1.inOut',
         });
     }, []);
 

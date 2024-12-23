@@ -38,8 +38,6 @@ const page = () => {
     ];
     return (
         <main className="w-full bg-white ">
-            <Navbar />
-            <div className="w-full lg:h-[10rem] h-[8rem]"></div>
             <div className="max-container lg:w-2/3 w-full h-full min-h-screen py-[3rem] pl-[5rem] flex flex-col gap-[3rem]">
                 <h1 className="font-bold text-[4rem] tracking-tight uppercase">
                     Contact Us
