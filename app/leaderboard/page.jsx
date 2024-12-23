@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function page() {
-  return (
-    <div>page</div>
-  )
-}
+const Leaderboard = () => {
+    return (
+        <main className="w-full min-h-screen bg-backGround">
+            <div>Leaderboard</div>
+        </main>
+    );
+};
+
+export default Leaderboard;

@@ -9,9 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
+		backGround: "#F4F7FE",
       },
 	  fontFamily: {
-		primary: ["Inter", "sans-serif"],
+		primary: ["Poppins", "sans-serif"],
 		secondary: ["Lexend Deca", "sans-serif"],
 	  }
     },

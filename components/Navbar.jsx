@@ -54,7 +54,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="w-full fixed top-0 z-50 navbar bg-white">
+        <div className="w-full fixed top-0 z-50 navbar bg-white shadow-md">
             <nav className="max-container py-[1rem] flex justify-between items-center">
                 <div className="lg:w-[8rem] lg:h-[8rem] w-[6rem] h-[6rem]">
                     <LazyBlurImage

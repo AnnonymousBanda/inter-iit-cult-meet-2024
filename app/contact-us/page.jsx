@@ -37,7 +37,7 @@ const page = () => {
         },
     ];
     return (
-        <main className="w-full bg-white ">
+        <main className="w-full bg-backGround py-[12rem]">
             <div className="max-container lg:w-2/3 w-full h-full min-h-screen py-[3rem] pl-[5rem] flex flex-col gap-[3rem]">
                 <h1 className="font-bold text-[4rem] tracking-tight uppercase">
                     Contact Us
@@ -104,7 +104,6 @@ const page = () => {
                     </Link>
                 </div>
             </div>
-            ;
         </main>
     );
 };
