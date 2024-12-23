@@ -1,5 +1,5 @@
 'use client';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { useRouter } from 'next/navigation';
 import { MdOutlineClose } from 'react-icons/md';
@@ -13,13 +13,22 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
             link: '/',
         },
         {
-            title: 'Gymkhana',
-            link: 'https://www.iitp.ac.in/gymkhana/',
+            title: 'Rulebook',
+            link: 'https://drive.google.com/file/d/10Klmfe6tuvGYcDDolDFJEj5jqmEV57We/view?usp=sharing',
+        },
+        {
+            title: 'Schedule',
+            link: 'https://docs.google.com/spreadsheets/d/16aj5holPMxsDlvULhnmG7ecDDyvFHT97R-ToTeUhaa4/edit?gid=82654713#gid=82654713',
         },
         {
             title: 'Leaderboard',
             link: '/leaderboard',
         },
+        {
+            title: 'Gymkhana',
+            link: 'https://www.iitp.ac.in/gymkhana/',
+        },
+
         {
             title: 'Contact Us',
             link: '/contact-us',
@@ -94,7 +103,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         handleCloseMenu();
         setTimeout(() => {
             router.push(link);
-        }, 1000);
+        }, 1300);
     };
 
     const isLinkSelected = (link) => activeLink && activeLink !== link;
