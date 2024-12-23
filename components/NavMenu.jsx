@@ -61,7 +61,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         if (menuOpen) {
             setMenuOpen(false);
             gsap.to('.menu-transition', {
-                duration: 1.5,
+                duration: 2,
                 right: '-100%',
                 delay: 1,
             });
@@ -81,7 +81,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
     const handleCloseMenu = () => {
         setMenuOpen(false);
         gsap.to('.menu-transition', {
-            duration: 0.5,
+            duration: 2,
             right: '-100%',
             delay: 1,
         });
