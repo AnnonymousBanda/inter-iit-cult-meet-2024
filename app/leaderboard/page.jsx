@@ -1,4 +1,5 @@
 import React from 'react';
+import Celebration from '../../components/Celebration';
 
 const Podium = ({ topThree }) => {
     const podiumColors = ['bg-orange-400', 'bg-yellow-400', 'bg-pink-400'];
@@ -55,14 +56,14 @@ const Podium = ({ topThree }) => {
 
 const Standings = ({ standings }) => {
     return (
-        <div className="max-w-5xl mx-auto my-10 p-4">
+        <div className="max-w-[60vw] mx-auto my-10 p-4">
             <div className="space-y-6">
                 {standings.map((player, index) => {
                     if (index < 3) return null;
                     return (
                         <div
                             key={index}
-                            className="flex items-center justify-between p-6 rounded-lg shadow-md text-white hover:scale-110 transition-transform duration-500 cursor-pointer bg-gray-700 w-full"
+                            className="flex items-center justify-between p-6 rounded-lg shadow-md text-white hover:scale-105 transition-transform duration-500 cursor-pointer bg-gray-700 w-full"
                         >
                             <div className="flex items-center space-x-4">
                                 <div className="text-3xl font-bold bg-gray-800 w-16 h-16 flex items-center justify-center rounded-full">
@@ -104,7 +105,8 @@ const Leaderboard = () => {
     return (
         <main className="w-full min-h-screen py-[12rem] bg-backGround">
             <div className="max-container">
-                <h2 className="font-extrabold text-center text-gray-800 mb-8">
+                <Celebration />
+                <h2 className="font-extrabold text-[6rem] text-center text-gray-800 mb-8">
                     Leaderboard
                 </h2>
                 <Podium topThree={standings.slice(0, 3)} />
