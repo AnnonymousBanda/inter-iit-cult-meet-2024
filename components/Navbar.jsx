@@ -5,6 +5,7 @@ import { LazyBlurImage } from './LazyBlurImage';
 import gsap from 'gsap';
 import NavMenu from './NavMenu';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Magnetic } from '.';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +43,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="w-full fixed top-0 z-50 navbar">
+        <div className="w-full fixed top-0 z-50 navbar bg-white">
             <nav className="max-container py-[1rem] flex justify-between items-center">
                 <div className="lg:w-[8rem] lg:h-[8rem] w-[6rem] h-[6rem]">
                     <LazyBlurImage
@@ -51,15 +52,17 @@ const Navbar = () => {
                         bgColor={false}
                     />
                 </div>
-                <div className="flex h-fit w-fit bg-[#1C1D20] rounded-full cursor-pointer">
-                    <div
-                        className="flex flex-col justify-center items-center gap-[0.4rem] lg:w-[5rem] lg:h-[5rem] w-[4rem] h-[4rem] p-[1rem] cursor-pointer"
-                        onClick={handleMenuClick}
-                    >
-                        <div className="w-3/5 h-[0.2rem] bg-[#AEAAA5]"></div>
-                        <div className="w-3/5 h-[0.2rem] bg-[#AEAAA5]"></div>
+                <Magnetic>
+                    <div className="flex h-fit w-fit bg-[#1C1D20] rounded-full cursor-pointer">
+                        <div
+                            className="flex flex-col justify-center items-center gap-[0.4rem] lg:w-[5rem] lg:h-[5rem] w-[4rem] h-[4rem] p-[1rem] cursor-pointer"
+                            onClick={handleMenuClick}
+                        >
+                            <div className="w-3/5 h-[0.2rem] bg-[#AEAAA5]"></div>
+                            <div className="w-3/5 h-[0.2rem] bg-[#AEAAA5]"></div>
+                        </div>
                     </div>
-                </div>
+                </Magnetic>
                 <NavMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             </nav>
         </div>

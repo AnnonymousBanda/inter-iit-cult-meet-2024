@@ -4,5 +4,6 @@ import { LazyBlurImage, FullScreenLazyBlurImage } from './LazyBlurImage';
 import Card from './Card';
 import Stairs from './Stairs'
 import NavMenu from './NavMenu';
+import Magnetic from './Magnetic'
 
-export { Navbar, Footer, LazyBlurImage, FullScreenLazyBlurImage, Card, Stairs, NavMenu };
+export { Navbar, Footer, LazyBlurImage, FullScreenLazyBlurImage, Card, Stairs, NavMenu, Magnetic };
