@@ -97,7 +97,7 @@ const StyledWrapper = styled.div`
     }
 
     .card-back {
-        background-color: #D5C9A8;
+        background-color: #321D33;
         color: #fff;
         display: flex;
         align-items: center;

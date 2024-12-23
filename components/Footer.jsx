@@ -169,7 +169,7 @@ const Footer = () => {
                     className="w-full h-screen absolute top-[0] z-[10] bg-transparent pointer-events-none"
                     viewBox="0 0 500 250"
                     preserveAspectRatio="none"
-                    fill="#f0f0f0"
+                    fill="#F4F7FE"
                 >
                     <path
                         ref={pathRef}
