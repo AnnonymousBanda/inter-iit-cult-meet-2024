@@ -7,19 +7,24 @@ import { MdOutlineClose } from 'react-icons/md';
 export default function NavMenu({ menuOpen, setMenuOpen }) {
     const [activeLink, setActiveLink] = useState(null);
 
-    useEffect(() => {
-        if (menuOpen) {
-            setTimeout(() => {
-                document.body.style.overflow = 'hidden';
-            }, 500);
-        } else {
-            setTimeout(() => {
-                document.body.style.overflow = 'auto';
-            }, 1500);
-        }
-    }, [menuOpen]);
-
-    const data = ['Leaderboard', 'Contact Us'];
+    const data = [
+        {
+            title: 'Home',
+            link: '/',
+        },
+        {
+            title: 'Gymkhana',
+            link: 'https://www.iitp.ac.in/gymkhana/',
+        },
+        {
+            title: 'Leaderboard',
+            link: '/leaderboard',
+        },
+        {
+            title: 'Contact Us',
+            link: '/contact-us',
+        },
+    ];
 
     useEffect(() => {
         const navLinks = document.querySelectorAll('.navlinks');
@@ -88,7 +93,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
     const handleNavOnClick = (link) => {
         handleCloseMenu();
         setTimeout(() => {
-            router.push('/' + link.toLowerCase().replace(/\s+/g, '-'));
+            router.push(link);
         }, 1000);
     };
 
@@ -96,21 +101,10 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
 
     return (
         <div
-            className={`bg-black w-1/3 h-full fixed z-[1000] menu-transition right-[-100%] top-0 text-[#dfdfdf]`}
+            className={`bg-black xl:w-1/4 md:w-1/3 sm:w-1/2 w-full h-full fixed z-[1000] menu-transition right-[-100%] top-0 text-[#dfdfdf]`}
         >
             <div className="w-full h-full flex flex-col max-container py-[2rem] bg-[#171717] overflow-x-hidden ">
-                <div className="nav-header flex justify-between items-end border-b border-white text-[1.6rem] mb-[1.5rem] py-[1rem] px-[2rem]">
-                    <div
-                        onClick={() => {
-                            handleCloseMenu();
-                            router.push('/');
-                        }}
-                        className="cursor-pointer"
-                    >
-                        <p className="text-[#dfdfdf] lg:text-[4.5rem] md:text-[3rem] text-[2.5rem] opacity-80">
-                            HOME
-                        </p>
-                    </div>
+                <div className="nav-header flex justify-end items-end border-b border-white text-[1.6rem] mb-[1.5rem] py-[1rem] px-[2rem]">
                     <div className="flex items-center justify-center sm:gap-[2rem] gap-[0.5rem]">
                         <>
                             <button
@@ -122,22 +116,20 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
                         </>
                     </div>
                 </div>
-                <ul className="flex flex-col items-start lg:text-[4.5rem] md:text-[3rem] text-[2.5rem] tracking-tight relative md:overflow-auto no-scrollbar">
-                    {data.map((navlink) => (
+                <ul className="flex flex-col items-end tracking-tight relative md:overflow-hidden no-scrollbar">
+                    {data.map(({ title, link }) => (
                         <li
-                            key={navlink}
+                            key={title}
                             className={`navlinks px-[1.5rem] transition-opacity duration-500 ${
-                                isLinkSelected(navlink)
-                                    ? 'text-[#3a3a3a9e]'
-                                    : ''
+                                isLinkSelected(link) ? 'text-[#3a3a3a9e]' : ''
                             }`}
                         >
-                            <span
-                                onClick={() => handleNavOnClick(navlink)}
-                                className="cursor-pointer"
+                            <p
+                                onClick={() => handleNavOnClick(link)}
+                                className="cursor-pointer md:text-[4rem] text-[3.5rem]"
                             >
-                                {navlink}
-                            </span>
+                                {title}
+                            </p>
                         </li>
                     ))}
                 </ul>
