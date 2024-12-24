@@ -47,7 +47,7 @@ export default function Celebration() {
       const delay = Math.random() * 0.05;
 
       const timeline = gsap.timeline();
-      
+      setTimeout(() => timeline.play(), 1000);
       timeline
         .fromTo(
           div,

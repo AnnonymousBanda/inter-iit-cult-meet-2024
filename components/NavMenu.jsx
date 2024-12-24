@@ -103,7 +103,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         handleCloseMenu();
         setTimeout(() => {
             router.push(link);
-        }, 1300);
+        }, 2000);
     };
 
     const isLinkSelected = (link) => activeLink && activeLink !== link;
