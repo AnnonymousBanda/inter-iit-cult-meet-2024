@@ -7,8 +7,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
     FaFacebookF,
-    FaTwitter,
-    FaLinkedinIn,
     FaInstagram,
     FaYoutube,
 } from 'react-icons/fa';
