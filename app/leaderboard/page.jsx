@@ -5,7 +5,7 @@ import Celebration from '../../components/Celebration';
 import { Footer, Loader } from '../../components';
 
 const Podium = ({ topThree }) => {
-    const podiumColors = ['bg-orange-400', 'bg-yellow-400', 'bg-blue-400'];
+    const podiumColors = ['bg-purple-400', 'bg-yellow-400', 'bg-blue-400'];
 
     return (
         <div className="flex justify-center items-end space-x-4 mb-10">
