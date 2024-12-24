@@ -146,3 +146,4 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         </div>
     );
 }
+/* vi: set et sw=4: */
