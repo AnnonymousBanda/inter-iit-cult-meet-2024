@@ -5,11 +5,7 @@ import Link from 'next/link';
 import { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {
-    FaFacebookF,
-    FaInstagram,
-    FaYoutube,
-} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { LazyBlurImage } from './LazyBlurImage';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -33,17 +29,33 @@ const FooterContent = () => {
                     <h3 className="text-[#d7d3c8] text-center w-fit">Home</h3>
                 </Link>
                 <Link
+                    href="https://drive.google.com/file/d/10Klmfe6tuvGYcDDolDFJEj5jqmEV57We/view?usp=sharing"
+                    className="w-fit"
+                >
+                    <h3 className="text-[#d7d3c8] text-center w-fit">
+                        Rulebook
+                    </h3>
+                </Link>
+                <Link
+                    href="https://docs.google.com/spreadsheets/d/16aj5holPMxsDlvULhnmG7ecDDyvFHT97R-ToTeUhaa4/edit?gid=82654713#gid=82654713"
+                    className="w-fit"
+                >
+                    <h3 className="text-[#d7d3c8] text-center w-fit">
+                        Schedule
+                    </h3>
+                </Link>
+                <Link href="/leaderboard" className="w-fit">
+                    <h3 className="text-[#d7d3c8] text-center w-fit">
+                        Leaderboard
+                    </h3>
+                </Link>
+                <Link
                     href="https://iitp.ac.in/gymkhana"
                     target="_blank"
                     className="w-fit"
                 >
                     <h3 className="text-[#d7d3c8] text-center w-fit">
                         Gymkhana
-                    </h3>
-                </Link>
-                <Link href="/leaderboard" className="w-fit">
-                    <h3 className="text-[#d7d3c8] text-center w-fit">
-                        Leaderboard
                     </h3>
                 </Link>
                 <Link href="/contact-us" className="w-fit">
@@ -110,7 +122,7 @@ const FooterContent = () => {
     );
 };
 
-const Footer = ({bgcolor}) => {
+const Footer = ({ bgcolor }) => {
     const pathRef = useRef(null);
     const [containerWidth, setContainerWidth] = useState(0);
 
