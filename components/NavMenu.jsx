@@ -103,7 +103,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         handleCloseMenu();
         setTimeout(() => {
             router.push(link);
-        }, 2000);
+        }, 3000);
     };
 
     const isLinkSelected = (link) => activeLink && activeLink !== link;
@@ -125,7 +125,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
                         </>
                     </div>
                 </div>
-                <ul className="flex flex-col items-end tracking-tight relative md:overflow-hidden no-scrollbar">
+                <ul className="flex flex-col items-end tracking-tight relative md:overflow-hidden no-scrollbar select-none">
                     {data.map(({ title, link }) => (
                         <li
                             key={title}
