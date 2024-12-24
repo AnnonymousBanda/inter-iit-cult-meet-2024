@@ -33,10 +33,10 @@ const page = () => {
                             7.0
                         </span>
                     </div>
-                    <div className='w-[55rem] h-[50rem] absolute bottom-0 left-0'>
+                    <div className='w-0 h-0 lg:w-[55rem] lg:h-[50rem] absolute bottom-0 left-0'>
                         <LazyBlurImage src='herobg.png' alt='Hero Image' rounded={false} bgColor={false} />
                     </div>
-                    <div className='w-[40rem] h-[40rem] absolute bottom-0 right-[2rem]'>
+                    <div className='w-0 h-0 lg:w-[40rem] lg:h-[40rem] absolute bottom-0 right-[2rem]'>
                         <LazyBlurImage src='herobg2.png' alt='Hero Image' rounded={false} bgColor={false} />
                     </div>
                     <div className='w-full h-full py-[3rem] flex flex-col gap-[2rem] justify-center text-center items-center'>
@@ -46,9 +46,9 @@ const page = () => {
                     </div>
                 </section>
             </Stairs>
-            <div className="bg-white flex flex-col items-center justify-center">
-                <h1>EVENTS</h1>
-                <main className="w-full min-h-screen py-[12rem] bg-white flex flex-wrap items-center justify-center">
+            <div className="bg-white flex flex-col py-[6rem] items-center justify-center">
+                <h1 className="text-[5.5rem]">EVENTS</h1>
+                <main className="w-full min-h-screen py-[6rem] bg-white flex flex-wrap items-center justify-center">
                     <EventCard imageUrl="com.png" text="hi" heading="COMEDY CUP" />
                     <EventCard imageUrl="DAC.png" text="hi" heading="DIGITAL ARTS CUP" />
                     <EventCard imageUrl="Culinary Arts.png" text="hi" heading="CULINARY ARTS CUP" />
