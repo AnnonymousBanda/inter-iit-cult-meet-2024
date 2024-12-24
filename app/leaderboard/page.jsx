@@ -101,9 +101,10 @@ const Leaderboard = () => {
                 const res = await fetch(
                     'https://script.google.com/macros/s/AKfycbxKy1v2po-7xR-0YoqYS48NMTN3rXSsUiWAyvW43sk10XdBUXDzIV8hkaVAksFt_8hP9w/exec'
                 );
-                const data = (await res.json()).data.slice(1);
+                const data = (await res.json()).data
+                    .slice(1)
+                    .sort((a, b) => b.score - a.score);
                 setStandings(data);
-                console.log(data);
                 setLoading(false);
             } catch (error) {
                 console.error(error);
