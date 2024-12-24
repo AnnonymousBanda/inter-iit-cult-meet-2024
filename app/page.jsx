@@ -53,6 +53,7 @@ const page = () => {
                     <EventCard imageUrl="DAC.png" text="hi" heading="DIGITAL ARTS CUP" />
                     <EventCard imageUrl="Culinary Arts.png" text="hi" heading="CULINARY ARTS CUP" />
                     <EventCard imageUrl="FA.png" text="hi" heading="FINE ARTS CUP" />
+                    <EventCard imageUrl="Fashion Cup.png" text="hi" heading="FASHION CUP" />
                     <EventCard imageUrl="Theartre.png" text="hi" heading="THEATRE CUP" />
                     <EventCard imageUrl="Dance art.png" text="hi" heading="DANCE ARTS CUP" />
                     <EventCard imageUrl="MA.png" text="hi" heading="MUSIC ARTS CUP" />
