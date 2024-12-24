@@ -38,7 +38,7 @@ const page = () => {
                             7.0
                         </span>
                     </div> */}
-                    <div className="w-0 h-0 xl:w-[55rem] xl:h-[50rem] lg:w-[45rem] lg:h-[40rem] md:w-[45rem] md:h-[40rem] z-10 absolute lg:bottom-0 bottom-[5rem] left-0">
+                    <div className="w-0 h-0 xl:w-[44rem] xl:h-[40rem] lg:w-[33rem] lg:h-[30rem] z-10 absolute lg:bottom-0 bottom-[5rem] left-0">
                         <LazyBlurImage
                             src="herobg.png"
                             alt="Hero Image"
@@ -70,7 +70,7 @@ const page = () => {
                             bgColor={false}
                         />
                     </div>
-                    <div className="w-full h-full lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
+                    <div className="w-full absolute top-[1rem] h-screen lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
                         <h1 className="lg:text-[5.5rem] text-[4rem] tracking-wider uppercase">
                             INTER IIT CULTURAL MEET 7.0
                         </h1>
