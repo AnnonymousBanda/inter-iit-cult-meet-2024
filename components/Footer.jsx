@@ -20,16 +20,12 @@ const FooterContent = () => {
     return (
         <div className="w-full max-container bg-[#141516] text-[#d7d3c8] py-8 flex flex-col justify-between items-center min-h-screen h-auto">
             <div className="flex flex-col items-center text-center gap-[2rem] py-[4rem]">
-                {/* <Image
+                <Image
                     src="/images/admin-block.svg"
                     width={500}
                     height={200}
                     alt="admin block"
-                /> */}
-                <div className='flex justify-center items-center gap-[5rem]'>
-                    <Image src='/images/library_logo.png' alt='logo' width={100} height={100} />
-                    <Image src='/images/iitp-logo.png' alt='logo' width={100} height={100} />
-                </div>
+                />
                 <h2 className="text-[#d7d3c8] uppercase xl:text-[3.6rem] md:text-[2.7rem] text-[1.5rem]">
                     Inter IIT Cultural Meet 2024
                 </h2>
