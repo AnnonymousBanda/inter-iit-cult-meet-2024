@@ -57,11 +57,13 @@ const Navbar = () => {
         <div className="w-full fixed top-0 z-50 navbar bg-white shadow-md">
             <nav className="max-container py-[1rem] flex justify-between items-center">
                 <div className="lg:w-[8rem] lg:h-[8rem] w-[6rem] h-[6rem]">
-                    <LazyBlurImage
-                        src="inter-iit.png"
-                        alt="Inter-IIT logo"
-                        bgColor={false}
-                    />
+                    <Link href="/">
+                        <LazyBlurImage
+                            src="inter-iit.png"
+                            alt="Inter-IIT logo"
+                            bgColor={false}
+                        />
+                    </Link>
                 </div>
                 <Magnetic>
                     <div className="flex h-fit w-fit bg-[#1C1D20] rounded-full cursor-pointer">
