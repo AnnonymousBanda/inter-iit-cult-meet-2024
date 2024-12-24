@@ -92,19 +92,25 @@ const Standings = ({ standings }) => {
 };
 
 const Leaderboard = () => {
-    const standings = [
-        { name: 'John Doe', score: 100 },
-        { name: 'Jane Doe', score: 90 },
-        { name: 'Alice', score: 80 },
-        { name: 'Bob', score: 70 },
-        { name: 'Charlie', score: 60 },
-        { name: 'David', score: 50 },
-        { name: 'Eve', score: 40 },
-        { name: 'Frank', score: 30 },
-        { name: 'Grace', score: 20 },
-        { name: 'Heidi', score: 10 },
-    ];
-    const [loading, setLoading] = useState(false);
+    const [standings, setStandings] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchStandings = async () => {
+            try {
+                const res = await fetch(
+                    'https://script.google.com/macros/s/AKfycbxKy1v2po-7xR-0YoqYS48NMTN3rXSsUiWAyvW43sk10XdBUXDzIV8hkaVAksFt_8hP9w/exec'
+                );
+                const data = (await res.json()).data.slice(1);
+                setStandings(data);
+                console.log(data);
+                setLoading(false);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        fetchStandings();
+    }, []);
 
     return (
         <>
