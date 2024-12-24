@@ -1,5 +1,6 @@
 import React from 'react';
 import Celebration from '../../components/Celebration';
+import Footer from '../../components/Footer'
 
 const Podium = ({ topThree }) => {
     const podiumColors = ['bg-orange-400', 'bg-yellow-400', 'bg-pink-400'];
@@ -103,6 +104,7 @@ const Leaderboard = () => {
     ];``
 
     return (
+        <>
         <main className="w-full min-h-screen py-[12rem] bg-backGround">
             <div className="max-container">
                 <Celebration />
@@ -113,6 +115,8 @@ const Leaderboard = () => {
                 <Standings standings={standings} />
             </div>
         </main>
+        <Footer bgcolor='#F4F7FE'/>
+        </>
     );
 };
 

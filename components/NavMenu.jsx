@@ -110,7 +110,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
 
     return (
         <div
-            className={`bg-black xl:w-1/4 md:w-1/3 sm:w-1/2 w-full h-full fixed z-[500] menu-transition right-[-100%] top-0 text-[#dfdfdf]`}
+            className={`bg-black xl:w-1/4 md:w-1/2 sm:w-1/2 w-full h-full fixed z-[500] menu-transition right-[-100%] top-0 text-[#dfdfdf]`}
         >
             <div className="w-full h-full flex flex-col max-container py-[2rem] bg-[#171717] overflow-x-hidden ">
                 <div className="nav-header flex justify-end items-end border-b border-white text-[1.6rem] mb-[1.5rem] py-[1rem] px-[2rem]">

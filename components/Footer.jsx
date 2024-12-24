@@ -112,7 +112,7 @@ const FooterContent = () => {
     );
 };
 
-const Footer = () => {
+const Footer = ({bgcolor}) => {
     const pathRef = useRef(null);
     const [containerWidth, setContainerWidth] = useState(0);
 
@@ -165,13 +165,13 @@ const Footer = () => {
                     className="w-full h-screen absolute top-[0] z-[10] bg-transparent pointer-events-none"
                     viewBox="0 0 500 250"
                     preserveAspectRatio="none"
-                    fill="#F4F7FE"
+                    fill={bgcolor}
                 >
                     <path
                         ref={pathRef}
                         d="M 0 0 Q 250 0 500 0"
                         strokeWidth="1"
-                        fill="#fff"
+                        fill={bgcolor}
                         className="filter drop-shadow-[0_7px_13px_rgba(128,128,128,0.3)]"
                     />
                 </svg>
