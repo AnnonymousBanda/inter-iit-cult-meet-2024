@@ -46,9 +46,9 @@ const page = () => {
                     </div>
                 </section>
             </Stairs>
-            <div className="bg-backGround flex flex-col items-center justify-center">
+            <div className="bg-white flex flex-col items-center justify-center">
                 <h1>EVENTS</h1>
-                <main className="w-full min-h-screen py-[12rem] bg-backGround flex flex-wrap items-center justify-center">
+                <main className="w-full min-h-screen py-[12rem] bg-white flex flex-wrap items-center justify-center">
                     <EventCard imageUrl="com.png" text="hi" heading="COMEDY CUP" />
                     <EventCard imageUrl="DAC.png" text="hi" heading="DIGITAL ARTS CUP" />
                     <EventCard imageUrl="Culinary Arts.png" text="hi" heading="CULINARY ARTS CUP" />
