@@ -1,6 +1,8 @@
-import React from 'react';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Celebration from '../../components/Celebration';
-import Footer from '../../components/Footer'
+import { Footer, Loader } from '../../components';
 
 const Podium = ({ topThree }) => {
     const podiumColors = ['bg-orange-400', 'bg-yellow-400', 'bg-pink-400'];
@@ -101,21 +103,28 @@ const Leaderboard = () => {
         { name: 'Frank', score: 30 },
         { name: 'Grace', score: 20 },
         { name: 'Heidi', score: 10 },
-    ];``
+    ];
+    const [loading, setLoading] = useState(true);
 
     return (
         <>
-        <main className="w-full min-h-screen py-[12rem] bg-backGround">
-            <div className="max-container">
-                <Celebration />
-                <h2 className="font-extrabold text-[6rem] text-center text-gray-800 mb-8">
-                    Leaderboard
-                </h2>
-                <Podium topThree={standings.slice(0, 3)} />
-                <Standings standings={standings} />
-            </div>
-        </main>
-        <Footer bgcolor='#F4F7FE'/>
+            <main className="w-full min-h-screen py-[12rem] bg-backGround">
+                <div className="max-container">
+                    {loading ? (
+                        <Loader />
+                    ) : (
+                        <>
+                            <Celebration />
+                            <h2 className="font-extrabold text-[6rem] text-center text-gray-800 mb-8">
+                                Leaderboard
+                            </h2>
+                            <Podium topThree={standings.slice(0, 3)} />
+                            <Standings standings={standings} />
+                        </>
+                    )}
+                </div>
+            </main>
+            <Footer bgcolor="#F4F7FE" />
         </>
     );
 };

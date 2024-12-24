@@ -5,5 +5,6 @@ import Card from './Card';
 import Stairs from './Stairs'
 import NavMenu from './NavMenu';
 import Magnetic from './Magnetic'
+import Loader from './Loader'
 
-export { Navbar, Footer, LazyBlurImage, FullScreenLazyBlurImage, Card, Stairs, NavMenu, Magnetic };
+export { Navbar, Footer, LazyBlurImage, FullScreenLazyBlurImage, Card, Stairs, NavMenu, Magnetic, Loader };
