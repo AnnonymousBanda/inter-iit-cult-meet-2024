@@ -39,11 +39,11 @@ const page = () => {
     return (
         <>
             <main className="w-full bg-backGround py-[12rem]">
-                <div className="max-container lg:w-2/3 w-full h-full min-h-screen py-[3rem] pl-[5rem] flex flex-col gap-[3rem]">
-                    <h1 className="font-bold text-[4rem] tracking-tight uppercase">
+                <div className="max-container lg:w-2/3 w-full h-full min-h-screen py-[3rem] sm:pl-[5rem] flex flex-col gap-[3rem]">
+                    <h1 className="font-bold tracking-tight uppercase">
                         Contact Us
                     </h1>
-                    <h2 className="font-bold text-[3rem] text-slate-900 ">
+                    <h2 className="font-bold  text-slate-900 w-full text-center">
                         Organising Commitee
                     </h2>
                     <div className="flex flex-col items-center gap-[3rem] md:flex-row md:flex-wrap justify-center">
@@ -60,53 +60,53 @@ const page = () => {
                         ))}
                     </div>
                     <div className="flex flex-col gap-[2rem]">
-                        <h2 className="font-bold text-[3rem]">Address</h2>
-                        <p className="text-[2.5rem] text-slate-900 pl-[2rem]">
+                        <h2 className="font-bold ">Address</h2>
+                        <p className=" text-slate-900 pl-[2rem]">
                             Gymkhana, IIT Patna, Bihta, Bihar - 801106
                         </p>
                     </div>
                     <div className="flex flex-col gap-[2rem]">
-                        <h2 className="font-bold text-[3rem]">Phone</h2>
+                        <h2 className="font-bold ">Phone</h2>
                         <ul className="pl-[2rem] list-disc list-inside gap-[2rem]">
                             <li>
-                                <p className="text-[2.5rem] text-slate-900">
+                                <p className=" text-slate-900">
                                     Event Organiser - +91&nbsp;1234567890
                                 </p>
                             </li>
                             <li>
-                                <p className="text-[2.5rem] text-slate-900">
+                                <p className=" text-slate-900">
                                     Event Organiser - +91&nbsp;1234567890
                                 </p>
                             </li>
                             <li>
-                                <p className="text-[2.5rem] text-slate-900">
+                                <p className=" text-slate-900">
                                     Event Organiser - +91&nbsp;1234567890
                                 </p>
                             </li>
                             <li>
-                                <p className="text-[2.5rem] text-slate-900">
+                                <p className=" text-slate-900">
                                     Event Organiser - +91&nbsp;1234567890
                                 </p>
                             </li>
                             <li>
-                                <p className="text-[2.5rem] text-slate-900">
+                                <p className=" text-slate-900">
                                     Event Organiser - +91&nbsp;1234567890
                                 </p>
                             </li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-[2rem]">
-                        <h2 className="font-bold text-[3rem]">Email</h2>
+                        <h2 className="font-bold ">Email</h2>
                         <Link
                             href="mailto:gymkhama@iitp.ac.in"
-                            className="text-[2.5rem] text-slate-900 pl-[2rem]"
+                            className=" text-slate-900 ml-[2rem] w-fit"
                         >
-                            gymkhana@iitp.ac.in
+                            <p className="w-fit">gymkhana@iitp.ac.in</p>
                         </Link>
                     </div>
                 </div>
             </main>
-            <Footer bgcolor='#F4F7FE' />
+            <Footer bgcolor="#F4F7FE" />
         </>
     );
 };
