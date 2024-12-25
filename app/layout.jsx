@@ -1,10 +1,13 @@
 import React from 'react';
 import './globals.css';
-import { Footer, Navbar } from '../components';
+import { Navbar } from '../components';
 
 export const metadata = {
     title: 'Inter IIT Cultural Meet 2024',
     description: 'The official website for the Inter IIT Cultural Meet 2024',
+    icons: {
+        icon: '/favicon.ico',
+    },
 };
 
 export default function RootLayout({ children }) {
