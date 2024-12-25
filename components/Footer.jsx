@@ -59,6 +59,17 @@ const FooterContent = () => {
                     </h3>
                 </Link>
             </div>
+            <div className="flex flex-roq items-center gap-[2rem] py-[4rem]">
+                <h3 className="text-[#d7d3c8] text-center w-fit">
+                    Emergency Contact
+                </h3>
+                <Link href="tel:+919302886207" className="w-fit">
+                    <p>+91 93028 86207</p>
+                </Link>
+                <Link href="tel:+916283872232" className="w-fit">
+                    <p>+91 6283 872 232</p>
+                </Link>
+            </div>
 
             <div className="flex lg:gap-[7rem] py-[2rem] gap-[5rem] w-full flex-wrap justify-center items-center">
                 <div className="flex flex-row justify-around gap-[4rem] items-center">
