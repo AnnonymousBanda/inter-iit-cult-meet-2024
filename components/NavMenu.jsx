@@ -28,11 +28,6 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
             title: 'Gymkhana',
             link: 'https://www.iitp.ac.in/gymkhana/',
         },
-
-        {
-            title: 'Contact Us',
-            link: '/contact-us',
-        },
     ];
 
     useEffect(() => {

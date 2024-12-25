@@ -58,11 +58,6 @@ const FooterContent = () => {
                         Gymkhana
                     </h3>
                 </Link>
-                <Link href="/contact-us" className="w-fit">
-                    <h3 className="text-[#d7d3c8] text-center w-fit">
-                        Contact&nbsp;Us
-                    </h3>
-                </Link>
             </div>
 
             <div className="flex lg:gap-[7rem] py-[2rem] gap-[5rem] w-full flex-wrap justify-center items-center">
