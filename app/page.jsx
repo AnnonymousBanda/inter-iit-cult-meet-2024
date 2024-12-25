@@ -46,7 +46,7 @@ const page = () => {
                             bgColor={false}
                         />
                     </div>
-                    <div className="w-[20rem] h-[30rem] z-10 md:w-0 md:h-0 absolute lg:bottom-0 bottom-[5rem] left-[-8rem]">
+                    <div className="w-[12rem] h-[18rem] z-10 md:w-0 md:h-0 absolute lg:bottom-0 bottom-[5rem] left-[-4rem]">
                         <LazyBlurImage
                             src="herobg3.png"
                             alt="Hero Image"
@@ -62,7 +62,7 @@ const page = () => {
                             bgColor={false}
                         />
                     </div>
-                    <div className="w-[25rem] h-[25rem] lg:w-[35rem] lg:h-[35rem] absolute lg:bottom-0 bottom-[5rem] right-[0rem]">
+                    <div className="w-[20rem] h-[20rem] lg:w-[35rem] lg:h-[35rem] absolute lg:bottom-0 bottom-[5rem] right-[0rem]">
                         <LazyBlurImage
                             src="herobg2.png"
                             alt="Hero Image"
@@ -70,8 +70,8 @@ const page = () => {
                             bgColor={false}
                         />
                     </div>
-                    <div className="w-full absolute top-[1rem] h-screen lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
-                        <h1 className="lg:text-[5.5rem] text-[4rem] tracking-wider uppercase">
+                    <div className="w-full absolute z-[5000] top-[1rem] h-screen lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
+                        <h1 className="uppercase">
                             INTER IIT CULTURAL MEET 7.0
                         </h1>
                         <h2 className="uppercase tracking-tight">

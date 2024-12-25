@@ -8,12 +8,12 @@ const Podium = ({ topThree }) => {
     const podiumColors = ['bg-purple-400', 'bg-yellow-400', 'bg-blue-400'];
 
     return (
-        <div className="flex justify-center items-end space-x-4 mb-10">
+        <div className="flex justify-center items-end">
             <div
-                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[0]} h-48 w-[20rem]`}
+                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[0]} h-48 min-w-[10rem] w-[30rem]`}
             >
                 <p
-                    className="font-semibold mb-2"
+                    className="font-semibold mb-2 text-[1.2rem]"
                     dangerouslySetInnerHTML={{
                         __html: topThree[1].name.replace(/ /g, '&nbsp;'),
                     }}
@@ -25,10 +25,10 @@ const Podium = ({ topThree }) => {
             </div>
 
             <div
-                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[1]} h-64 w-[30rem]`}
+                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[1]} h-64 w-[30rem] min-w-[10rem]`}
             >
                 <p
-                    className="font-semibold mb-2"
+                    className="font-semibold mb-2 text-[1.2rem]"
                     dangerouslySetInnerHTML={{
                         __html: topThree[0].name.replace(/ /g, '&nbsp;'),
                     }}
@@ -40,10 +40,10 @@ const Podium = ({ topThree }) => {
             </div>
 
             <div
-                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[2]} h-44 w-[20rem]`}
+                className={`flex flex-col items-center justify-end p-4 rounded-lg shadow-lg text-white ${podiumColors[2]} h-44 min-w-[10rem] w-[30rem]`}
             >
                 <p
-                    className="font-semibold mb-2"
+                    className="font-semibold mb-2 text-[1.2rem]"
                     dangerouslySetInnerHTML={{
                         __html: topThree[2].name.replace(/ /g, '&nbsp;'),
                     }}
@@ -59,7 +59,7 @@ const Podium = ({ topThree }) => {
 
 const Standings = ({ standings }) => {
     return (
-        <div className="max-w-[60vw] mx-auto my-10 p-4">
+        <div className="sm:max-w-[60vw] max-w-[90vw] mx-auto my-10 p-4">
             <div className="space-y-6">
                 {standings.map((player, index) => {
                     if (index < 3) return null;
@@ -122,9 +122,9 @@ const Leaderboard = () => {
                     ) : (
                         <>
                             <Celebration />
-                            <h2 className="font-extrabold text-[6rem] text-center text-gray-800 mb-8">
+                            <h1 className="text-center text-gray-800 mb-8">
                                 Leaderboard
-                            </h2>
+                            </h1>
                             <Podium topThree={standings.slice(0, 3)} />
                             <Standings standings={standings} />
                         </>
