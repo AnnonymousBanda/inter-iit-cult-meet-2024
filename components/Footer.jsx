@@ -98,7 +98,7 @@ const FooterContent = () => {
                     <FaFacebookF className="text-[20px] sm:text-[25px] md:text-[30px]" />
                 </Link>
                 <Link
-                    href="https://www.instagram.com/iitpatna_gymkhana/"
+                    href="https://www.instagram.com/interiit_culturals?igsh=dzYzOTZ1aWlzd28x"
                     target="_blank"
                     aria-label="Instagram"
                 >
