@@ -65,7 +65,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         if (menuOpen) {
             setMenuOpen(false);
             gsap.to('.menu-transition', {
-                duration: 0.5,
+                duration: 1,
                 right: '-100%',
                 delay: 1,
             });
@@ -75,7 +75,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         } else {
             setMenuOpen(true);
             gsap.to('.menu-transition', {
-                duration: 0.5,
+                duration: 1,
                 right: '0',
                 delay: 0.3,
             });
@@ -85,7 +85,7 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
     const handleCloseMenu = () => {
         setMenuOpen(false);
         gsap.to('.menu-transition', {
-            duration: 2,
+            duration: 1,
             right: '-100%',
             delay: 1,
         });
@@ -141,4 +141,3 @@ export default function NavMenu({ menuOpen, setMenuOpen }) {
         </div>
     );
 }
-/* vi: set et sw=4: */

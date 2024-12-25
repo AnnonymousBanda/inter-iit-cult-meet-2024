@@ -38,7 +38,7 @@ const page = () => {
                             7.0
                         </span>
                     </div> */}
-                    <div className="w-0 h-0 xl:w-[44rem] xl:h-[40rem] lg:w-[33rem] lg:h-[30rem] z-10 absolute lg:bottom-0 bottom-[5rem] left-0">
+                    <div className="w-0 h-0 lg:w-[44rem] lg:h-[40rem] md:w-[27.5rem] md:h-[25rem] z-10 absolute lg:bottom-0 bottom-[5rem] left-0">
                         <LazyBlurImage
                             src="herobg.png"
                             alt="Hero Image"
@@ -70,7 +70,7 @@ const page = () => {
                             bgColor={false}
                         />
                     </div>
-                    <div className="w-full absolute z-[5000] top-[1rem] h-screen lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
+                    <div className="w-full absolute z-[40] top-[1rem] h-screen lg:py-[3rem] md:py-[8rem] py-[5rem] flex flex-col gap-[2rem] justify-center text-center items-center">
                         <h1 className="uppercase">
                             INTER IIT CULTURAL MEET 7.0
                         </h1>
@@ -154,4 +154,4 @@ const page = () => {
 };
 
 export default page;
-/* vi: set et sw=4: */
+
